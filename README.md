@@ -1,4 +1,4 @@
-# code
+# Code Challenge
 New repository with challenge to Company
 
 This is a final version.
