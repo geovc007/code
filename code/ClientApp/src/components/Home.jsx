@@ -7,8 +7,8 @@ function Home() {
     return (
         <div className="App">
             <Menu />
-            {/*<Content />*/}
-            {/*<Footer/>*/}
+            <Content />
+            <Footer/>
         </div>
     );
 }

@@ -43,6 +43,17 @@ function ContentLocal() {
         setSourceUrl(sourceUrl);
     }
 
+    const clearInfo = () => {
+        setId("");
+        setTitle("");
+        setDescription("");
+        setContent("");
+        setUrl("");
+        setImage("");
+        setSource("");
+        setSourceUrl("");
+    }
+
     const deleteInfo = async (id) => {
         const url = `https://localhost:44368/api/news/delete_news/${id}`;
         const resultado = await axios.delete(url);
@@ -262,6 +273,16 @@ function ContentLocal() {
                                         className="btn-enviar"
                                     >
                                         Send
+                                    </Button>{' '}
+                                    <Button
+                                        type="button"
+                                        variant="warning"
+                                        className="btn-enviar"
+                                        onClick={() =>
+                                            clearInfo()
+                                        }
+                                    >
+                                        Clear
                                     </Button>
                                 </Form.Group>
                             </Row>

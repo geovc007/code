@@ -8,7 +8,7 @@ function Local() {
         <div className="App">
             <Menu />
             <ContentLocal />
-            {/*<Footer />*/}
+            <Footer />
         </div>
     );
 }
