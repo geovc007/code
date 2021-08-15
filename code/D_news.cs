@@ -56,8 +56,8 @@ namespace code
                     url = news.url,
                     image = news.image,
                     publishedAt = DateTime.Now,
-                    source = news.source.name,
-                    source_url = news.source.url
+                    source = news.source,
+                    source_url = news.source_url
                 };
                 string query = $@"insert into news (id, title, description, content, url, image, publishedAt, source, source_url) values (@id, @title, @description, @content, @url, @image, @publishedAt, @source, @source_url)";
                 dbContext.ejecutarQuery(query, param);
@@ -87,8 +87,8 @@ namespace code
                     url = news.url,
                     image = news.image,
                     publishedAt = DateTime.Now,
-                    source = news.source.name,
-                    source_url = news.source.url
+                    source = news.source,
+                    source_url = news.source_url
                 };
                 String query = $@"UPDATE news SET title = @title, title=@title, description=@description, content=@content, url=@url, image=@image, publishedAt=@publishedAt, source=@source, source_url=@source_url WHERE id= @id";
                 dbContext.ejecutarQuery(query, param);

@@ -14,11 +14,8 @@ namespace code
             public String url { get; set; }
             public String image { get; set; }
             public DateTime publishedAt { get; set; }
-            public E_sourse source { get; set; }
-            public E_News()
-            {
-                source = new E_sourse();
-            }
+            public String source { get; set; }
+            public String source_url { get; set; }
         }
 
         public class E_sourse
